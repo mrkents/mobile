@@ -28,13 +28,14 @@ function onBackKeyDown() {
 			e.preventDefault();
 		}
 		else{
-			//navigator.notification.alert("salida normal por home");
 			navigator.app.exitApp();
 		}
 	}
-	/*else if($.mobile.activePage.is('#centros')){
-		navigator.app.backHistory()
-	}*/
+	else if($.mobile.activePage.is('#centros')){
+		navigator.notification.alert("desde centros hacia");
+		$.mobile.changePage('#menubutton');
+		//navigator.app.backHistory()
+	}
 	else {
 		//navigator.notification.alert("general back...");
 		navigator.app.backHistory()
