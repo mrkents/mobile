@@ -21,7 +21,7 @@ function onMenuKeyDown() {
 // Handle the back button
 function onBackKeyDown() {
 	
-	if($.mobile.activePage.is('#home')){
+	/*if($.mobile.activePage.is('#home')){
 		if(document.getElementById('menubutton').style.display=='block'){
 			//navigator.notification.alert("estaba abierto el menu");
 			document.getElementById('menubutton').style.display='none';
@@ -35,11 +35,12 @@ function onBackKeyDown() {
 		navigator.notification.alert("desde centros hacia");
 		//$.mobile.changePage('#menubutton');
 		navigator.app.backHistory()
-	}*/
+	}
 	else {
 		//navigator.notification.alert("general back...");
 		navigator.app.backHistory()
-	}
+	}*/
+	navigator.app.backHistory()
 }
 
 
