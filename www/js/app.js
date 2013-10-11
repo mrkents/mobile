@@ -5,7 +5,7 @@ function inicio(){
 	//navigator.notification.alert("Estamos listos..");
 	//document.getElementById('load').style.display='none';
 	//document.getElementById('app').style.display='block';
-	
+	navigator.notification.alert("inicio");
 	// Register the event listener
 	document.addEventListener("menubutton", onMenuKeyDown, false);
 	document.addEventListener("backbutton", onBackKeyDown, false);
@@ -14,6 +14,7 @@ function inicio(){
 
 // Handle the menu button
 function onMenuKeyDown() {
+	navigator.notification.alert("menu preparado");
 	document.getElementById('menubutton').style.display='block';
 }
 
