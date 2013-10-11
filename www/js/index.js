@@ -36,7 +36,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         //Preparo mi código javascript
-        //inicio();
+        inicio();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,6 +47,5 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
         console.log('Received Event: ' + id);
-        inicio();
     }
 };

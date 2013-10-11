@@ -3,8 +3,8 @@
  */
 function inicio(){
 	//navigator.notification.alert("Estamos listos..");
-	document.getElementById('load').style.display='none';
-	document.getElementById('app').style.display='block';
+	//document.getElementById('load').style.display='none';
+	//document.getElementById('app').style.display='block';
 	
 	// Register the event listener
 	document.addEventListener("menubutton", onMenuKeyDown, false);
@@ -22,7 +22,7 @@ function onBackKeyDown() {
 	
 	if($.mobile.activePage.is('#home')){
 		if(document.getElementById('menubutton').style.display=='block'){
-			navigator.notification.alert("estaba abierto el menu");
+			//navigator.notification.alert("estaba abierto el menu");
 			document.getElementById('menubutton').style.display='none';
 			e.preventDefault();
 		}
@@ -35,7 +35,7 @@ function onBackKeyDown() {
 		navigator.app.backHistory()
 	}*/
 	else {
-		navigator.notification.alert("general back...");
+		//navigator.notification.alert("general back...");
 		navigator.app.backHistory()
 	}
 }
