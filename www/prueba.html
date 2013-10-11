@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slide Panel Pinehead.tv</title>
+<link rel="stylesheet" href="js/mobile/jquery.mobile-1.3.2.min.css" />
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/mobile/jquery.mobile-1.3.2.min.js"></script>
+
+</head>
+<body>
+<div data-role="page">
+<!– Step 1 add panel code –>
+<div data-role="panel" id="myPanel" data-theme="a">
+<p>TRight options</p>
+</div>
+<div data-role="panel" id="myPanel2" data-theme="a" >
+<p>Left options</p>
+</div>
+
+<!– add button code to show panels –>
+
+<div data-role="content">
+<a href="#myPanel" data-role="button" data-display="reveal" data-position="left" data-dismissible="true">Show panel</a>
+<a href="#myPanel" data-role="button" data-icon="gear" class="ui-btn-right">Opciones</a>
+</div>
+</div><!– /page –>
+</body>
+</html>
