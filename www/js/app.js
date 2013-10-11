@@ -20,7 +20,17 @@ function onMenuKeyDown() {
 
 // Handle the back button
 function onBackKeyDown() {
-	
+	if(document.getElementById('menubutton').style.display=='block'){
+		navigator.notification.alert("estaba abierto el menu");
+		document.getElementById('menubutton').style.display='none';
+		e.preventDefault();
+	}
+	else if(document.getElementById('home')){
+		navigator.app.exitApp();
+	}
+	else{
+		navigator.app.backHistory()
+	}
 	/*if($.mobile.activePage.is('#home')){
 		if(document.getElementById('menubutton').style.display=='block'){
 			//navigator.notification.alert("estaba abierto el menu");
@@ -40,7 +50,7 @@ function onBackKeyDown() {
 		//navigator.notification.alert("general back...");
 		navigator.app.backHistory()
 	}*/
-	navigator.app.backHistory()
+	
 }
 
 
